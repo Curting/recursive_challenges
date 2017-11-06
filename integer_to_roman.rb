@@ -29,3 +29,4 @@ def int_to_roman(int, result = [])
 end
 
 puts int_to_roman(2017) # => "MMXVII"
+puts int_to_roman(964) # => "CMLXIV"
