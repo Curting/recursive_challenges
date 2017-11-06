@@ -17,7 +17,6 @@ def roman_to_int(roman, result = 0)
   }
 
   roman_mapping.keys.each do |letter|
-    # Letter.length fixes a bug when "M" is found in "CM".
     if roman.start_with?(letter) # M
       roman.sub!(letter, "") # MXVII
       result += roman_mapping[letter] # 1000
